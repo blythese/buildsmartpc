@@ -138,8 +138,9 @@ nav {
     -webkit-transform: rotate(45deg);
 
 }
+
 .fallback-image {
-    display: block;
+    display: none;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -154,4 +155,11 @@ nav {
         display: none;
     }
 
+    .fallback-image{
+        display: block;
+    }
+    
+    .hero{
+        background: none;
+    }
 }
