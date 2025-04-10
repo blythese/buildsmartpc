@@ -14,7 +14,7 @@
 
 
     <div class="hero">
-        <video autoplay loop muted plays-inline class="back-video" id="bgVideo" poster="images/mobilegb.jpg">
+        <video autoplay loop muted plays-inline class="back-video" id="bgVideo" poster="images/mobilebg.jpg">
             <source src="https://pub-b3e737a71fcc465e81d0fd712692ec5c.r2.dev/Adobestock 343739001(3)(2).webm" type="video/webm">
             <img src="images/mobilegb.jpg" alt="Fallback background image" class="fallback-image">
         </video>
@@ -80,9 +80,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const video = document.getElementById("bgVideo");
-            video.src = "https://pub-b3e737a71fcc465e81d0fd712692ec5c.r2.dev/Adobestock%20343739001(3)(2).webm";
-            video.load();
+            let video = document.getElementById("bgVideo");
             video.playbackRate = 0.6; // Set video to half speed
         });
 
