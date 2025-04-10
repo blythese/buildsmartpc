@@ -140,9 +140,10 @@ nav {
 }
 @media (max-width: 768px) {
     #bgVideo {
-      display: none;
+        display: none;
     }
-    body {
-      background: url('images/mobilegb.jpg') no-repeat center center / cover;
+
+    .hero {
+        background: url('images/mobilegb.jpg') no-repeat center center / cover;
     }
-  }
+}
