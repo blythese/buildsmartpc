@@ -138,3 +138,11 @@ nav {
     -webkit-transform: rotate(45deg);
 
 }
+@media (max-width: 768px) {
+    #bgVideo {
+      display: none;
+    }
+    body {
+      background: url('images/fallback-image.webp') no-repeat center center / cover;
+    }
+  }
