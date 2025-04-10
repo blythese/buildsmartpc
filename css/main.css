@@ -157,8 +157,4 @@ nav {
     .fallback-image {
         display: block;
     }
-
-    .hero {
-        background: none; /* Prevent double backgrounds */
-    }
 }
