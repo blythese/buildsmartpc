@@ -1,0 +1,8 @@
+/* FAQ Page Specific Styles */
+.faq {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+}

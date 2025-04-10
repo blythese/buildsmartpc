@@ -1,0 +1,81 @@
+/* Guides Page Specific Styles */
+.guides {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    font-weight: bold;
+}
+
+
+
+/* Guides Content */
+.guides-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+.top-section {
+    display: flex;
+    gap: 20px;
+}
+
+.top-section,
+.guide-section {
+    flex: 1;
+}
+
+.step-by-step {
+    width: 100%;
+}
+
+.guide-section {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #022c43;
+    border-radius: 8px;
+    color: white;
+}
+
+.guide-section h2 {
+    color: #fff;
+    text-shadow: 0 0 2.5px #0286BD,
+        0 0 5px #0286BD,
+        0 0 10px #00aaff,
+        0 0 20px #00aaff,
+        0 0 40px #00e6ff;
+}
+
+.guide-section p,
+.guide-section ul,
+.guide-section ol {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.guide-section ul,
+.guide-section ol {
+    padding-left: 20px;
+}
+
+.guide-section li {
+    margin-bottom: 10px;
+}
+
+.guide-section li a {
+    color: #00e6ff;
+    text-shadow: 0 0 5px #00e6ff;
+}
+
+@media screen and (max-width: 768px) {
+    .guides-container {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Build Smart PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <video preload="metadata" autoplay loop muted plays-inline class="back-video" id="bgVideo">
+            <source src="images/Adobestock%20343739001(3)(2).webm" type="video/webm">
+        </video>
+        <nav>
+            <h1>
+                <a href="home.html">
+                    <img src="images/logo1.webp" alt="logo">
+
+                </a>
+            </h1>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="guides.html">GUIDES</a></li>
+                <li><a href="builds.html">BUILDS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="welcome">
+            WELCOME
+        </div>
+
+        <div class="scroll">
+            <a href="#main"><i class="arrow down"></i>Scroll</a>
+        </div>
+    </div>
+
+
+    <section id="main">
+         <div class="introduction">
+            <h2>Welcome to Build Smart PC</h2>
+            <p>Your ultimate guide to building a custom PC, even if you have no idea where to start.</p>
+        </div>
+    
+     
+        <section class="intro-section">
+            <h3>Why Build Your Own PC?</h3>
+            <p>Building your own PC lets you customize every part, save money, and understand how your machine works. It's easier than you think, and we're here to help!</p>
+        </section>
+        
+       <section class="features-section">
+            <h3>Explore Our Features</h3>
+            <ul class="features-list">
+                <li><strong>Step-by-Step Guides:</strong> Learn everything from choosing parts to assembling them.</li>
+                <li><strong>Build Examples:</strong> Pre-selected parts lists for every budget and purpose.</li>
+                <li><strong>FAQ and Resources:</strong> Get answers to common questions and explore trusted links and videos.</li>
+            </ul>
+        </section>
+   
+        <section class="guide-section">
+            <h3>New to PC Building?</h3>
+            <p>No worries! Click below to dive into the beginner’s guide and start your first build with confidence.</p>
+            <a href="guides.html" class="guide-button">Beginner's Guide</a>
+        </section>
+        
+    </section>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let video = document.getElementById("bgVideo");
+            video.playbackRate = 0.6; // Set video to half speed
+        });
+
+
+        function toggleMenu() {
+            let menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+/* Home Page Specific Styles */
+.welcome {
+    font-size: clamp(4rem, 10vw, 6rem);
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.introduction,
+.intro-section,
+.features-section,
+.guide-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 40px;
+    padding: 20px;
+    background: #000B2A;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.introduction h2,
+.intro-section h3,
+.features-section h3,
+.guide-section h3 {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 0 2.5px #0286BD,
+        0 0 5px #0286BD,
+        0 0 10px #00aaff,
+        0 0 20px #00aaff,
+        0 0 40px #00e6ff;
+    margin-bottom: 15px;
+}
+
+.introduction p,
+.intro-section p,
+.features-section p,
+.guide-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.features-list {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-left: 20px;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+}
+
+.guide-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #00e6ff;
+    color: black;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.guide-button:hover {
+    background: #02c0cc;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+
+    .features-list {
+        padding-left: 10px;
+    }
+
+    .guide-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Build Smart PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/guides.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
+            <source src="images/AdobeStock%20343739001.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <h1><a href="home.html"><img src="images/logo1.png" alt="logo"></h1></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="guides.html">GUIDES</a></li>
+                <li><a href="builds.html">BUILDS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="guides">
+            GUIDES
+        </div>
+        <div class="scroll">
+            <a href="#main"><i class="arrow down"></i>Scroll</a>
+        </div>
+    </div>
+    <section id="main">
+        <div class="guides-container">
+            <div class="top-section">
+                <div class="guide-section">
+                    <h2>Understanding PC Components</h2>
+                    <p>Before you build a PC, you need to know what the parts do...</p>
+                    <ul>
+                        <li><strong>CPU (Processor)</strong>: The brain of the computer that does all the thinking.</li>
+                        <li><strong>GPU (Graphics Card)</strong>: Handles pictures, videos, and games so everything looks smooth.</li>
+                        <li><strong>RAM (Memory)</strong>: Temporary storage that helps your computer run multiple things at once.</li>
+                        <li><strong>Storage (HDD/SSD)</strong>: Where all your files, games, and programs are stored.</li>
+                        <li><strong>Motherboard</strong>: The big board that connects all the parts so they can work together.</li>
+                        <li><strong>Power Supply Unit (PSU)</strong>: Gives power to all the parts so they can function.</li>
+                        <li><strong>Cooling System</strong>: Keeps your computer from overheating by using fans or liquid cooling.</li>
+                    </ul>
+                </div>
+                <div class="guide-section">
+                    <h2>Choosing Compatible Parts</h2>
+                    <p>Not all PC parts work together. Here's how to make sure yours do:</p>
+                    <ul>
+                        <li>Make sure the CPU fits the motherboard (check the socket type).</li>
+                        <li>Buy RAM that the motherboard supports (DDR4, DDR5, etc.).</li>
+                        <li>Get a power supply with enough watts to handle all the parts.</li>
+                        <li>Check that your graphics card fits inside your case.</li>
+                        <li>Use <a href="https://pcpartpicker.com/">PCPartPicker</a> to see if everything is compatible before you buy.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step-by-step">
+                <div class="guide-section">
+                    <h2>Step-by-Step Assembly (For Beginners)</h2>
+                    <p>Follow these steps exactly, and you'll have a working PC:</p>
+                    <ol>
+                        <li><strong>Prepare Your Workspace:</strong> Find a clean table, wash your hands, and touch a metal object to remove static electricity.</li>
+                        <li><strong>Install the CPU:</strong> Open the CPU socket on the motherboard, carefully place the CPU in the right direction (look for the tiny triangle), and close the latch.</li>
+                        <li><strong>Attach the CPU Cooler:</strong> If using thermal paste, apply a small line like a single rice amount on the CPU. Secure the cooler in place.</li>
+                        <li><strong>Install RAM:</strong> Find the RAM slots, line up the stick with the notch, and firmly press down until it clicks.</li>
+                        <li><strong>Mount the Motherboard:</strong> Place it inside the case and screw it down securely.</li>
+                        <li><strong>Install the Power Supply:</strong> Put it in the PSU slot (usually at the bottom of the case) and secure it with screws.</li>
+                        <li><strong>Install Storage:</strong> Attach SSDs or HDDs to their slots and connect the cables to the motherboard.</li>
+                        <li><strong>Install the Graphics Card:</strong> Insert it into the PCIe slot on the motherboard and secure it with screws.</li>
+                        <li><strong>Connect All Cables:</strong> Attach power cables from the PSU to the motherboard, GPU, and storage devices.</li>
+                        <li><strong>Power On & Test:</strong> Press the power button. If the fans spin and you see something on the monitor, great! If not, check connections.</li>
+                        <li><strong>Install Windows:</strong> Plug in a bootable USB drive, follow the on-screen instructions, and set up your PC.</li>
+                        <li><strong>Update Drivers:</strong> Download and install drivers for your motherboard, GPU, and other parts.</li>
+                        <li><strong>Final Touches:</strong> Run a stress test, make sure everything stays cool, and tidy up cables for a clean look.</li>
+                    </ol>
+                    <p>That's it! You've built your first PC. Now go enjoy your new setup!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let video = document.getElementById("bgVideo");
+            video.playbackRate = 0.6; // Set video to half speed
+        });
+
+
+        function toggleMenu() {
+            let menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+</html>

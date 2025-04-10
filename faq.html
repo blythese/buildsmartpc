@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Build Smart PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
+            <source src="images/AdobeStock%20343739001.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <h1><a href="home.html"><img src="images/logo1.png" alt="logo"></h1></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="guides.html">GUIDES</a></li>
+                <li><a href="builds.html">BUILDS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="faq">
+            FAQ
+        </div>
+    </div>
+
+<section class="faq-container">
+        <div class="faq-item">
+            <h3>Q: Is building a PC hard?</h3>
+            <p>A: Not really! It’s like putting together adult LEGO. With the right guidance, anyone can do it.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Do I need special tools?</h3>
+            <p>A: A Phillips head screwdriver is all you need for most builds.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: How do I know parts are compatible?</h3>
+            <p>A: Use tools like PCPartPicker to check compatibility before buying.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: What if my PC doesn’t turn on?</h3>
+            <p>A: Don’t panic! Recheck all your connections.</p>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let video = document.getElementById("bgVideo");
+            video.playbackRate = 0.6; // Set video to half speed
+        });
+
+
+        function toggleMenu() {
+            let menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+</html>

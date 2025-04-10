@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Build Smart PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
+            <source src="images/AdobeStock%20343739001.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <h1><a href="home.html"><img src="images/logo1.png" alt="logo"></a></h1>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="guides.html">GUIDES</a></li>
+                <li><a href="builds.html">BUILDS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            CONTACT ME
+        </div>
+    </div>
+
+    <div id="formdiv">
+
+        <form action="action_page.php">
+
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+            <label for="lname">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email Address">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let video = document.getElementById("bgVideo");
+            video.playbackRate = 0.6; // Set video to half speed
+        });
+
+
+        function toggleMenu() {
+            let menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+</html>
