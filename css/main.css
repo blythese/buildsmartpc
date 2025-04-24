@@ -1,19 +1,15 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
-    
 }
 
 html {
     scroll-behavior: smooth;
     background-color: #4E5D6C;
-
 }
 
-/* Text Styling (Glowing Effect) */
 nav,
 nav ul li a,
 .hero,
@@ -28,7 +24,6 @@ nav ul li a,
         0 0 120px #00e6ff;
 }
 
-/* Navbar Styles */
 nav {
     width: 100%;
     position: absolute;
@@ -42,7 +37,6 @@ nav {
     z-index: 10;
 }
 
-/* Navbar Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -57,7 +51,6 @@ nav {
     text-decoration: none;
 }
 
-/* Hamburger Menu (Hidden on large screens) */
 .menu-toggle {
     display: none;
     font-size: 30px;
@@ -65,7 +58,6 @@ nav {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     width: 100%;
     height: 100vh;
@@ -77,7 +69,6 @@ nav {
     overflow: hidden;
 }
 
-/* Background Video */
 .back-video {
     position: absolute;
     top: 0;
@@ -88,7 +79,6 @@ nav {
     z-index: -1;
 }
 
-/* Responsive Navigation */
 @media screen and (max-width: 1024px) {
     .menu-toggle {
         display: block;
@@ -118,13 +108,11 @@ nav {
 .scroll {
     position: absolute;
     margin-top: 750px;
-    
 }
 
 .scroll a {
     text-decoration: none;
 }
-
 
 .arrow {
     position: absolute;
@@ -136,7 +124,6 @@ nav {
     padding: 15px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-
 }
 
 .fallback-image {
@@ -155,11 +142,11 @@ nav {
         display: none;
     }
 
-    .fallback-image{
+    .fallback-image {
         display: block;
     }
-    
-    .hero{
+
+    .hero {
         background: none;
     }
 }
