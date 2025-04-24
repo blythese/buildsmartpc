@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Build Smart PC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgzfDYlpw.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
-    
+    <link rel="preload" href="/fonts/Orbitron-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Orbitron-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Orbitron-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Orbitron-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Orbitron-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Orbitron-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
-
 <body>
-
-
     <div class="hero">
         <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
             <source src="https://pub-b3e737a71fcc465e81d0fd712692ec5c.r2.dev/Adobestock 343739001(3)(2).webm" type="video/webm" media="(min-width: 769px)">
@@ -24,7 +23,6 @@
             <h1>
                 <a href="home.html">
                     <img src="images/logo1.webp" alt="logo">
-
                 </a>
             </h1>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -37,29 +35,22 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
-
         <div class="welcome">
             WELCOME
         </div>
-
         <div class="scroll">
             <a href="#main"><i class="arrow down"></i>Scroll</a>
         </div>
     </div>
-
-
     <section id="main">
          <div class="introduction">
             <h2>Welcome to Build Smart PC</h2>
             <p>Your ultimate guide to building a custom PC, even if you have no idea where to start.</p>
-        </div>
-    
-     
+        </div>     
         <section class="intro-section">
             <h3>Why Build Your Own PC?</h3>
             <p>Building your own PC lets you customize every part, save money, and understand how your machine works. It's easier than you think, and we're here to help!</p>
         </section>
-        
        <section class="features-section">
             <h3>Explore Our Features</h3>
             <ul class="features-list">
@@ -67,32 +58,22 @@
                 <li><strong>Build Examples:</strong> Pre-selected parts lists for every budget and purpose.</li>
                 <li><strong>FAQ and Resources:</strong> Get answers to common questions and explore trusted links and videos.</li>
             </ul>
-        </section>
-   
+        </section>   
         <section class="guide-section">
             <h3>New to PC Building?</h3>
             <p>No worries! Click below to dive into the beginner’s guide and start your first build with confidence.</p>
             <a href="guides.html" class="guide-button">Beginner's Guide</a>
-        </section>
-        
+        </section>        
     </section>
-
-
-
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             let video = document.getElementById("bgVideo");
             video.playbackRate = 0.6; // Set video to half speed
         });
-
-
         function toggleMenu() {
             let menu = document.querySelector(".nav-links");
             menu.classList.toggle("active");
         }
-
     </script>
 </body>
-
 </html>
