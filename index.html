@@ -18,7 +18,16 @@
         <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
             <source src="https://pub-b3e737a71fcc465e81d0fd712692ec5c.r2.dev/Adobestock 343739001(3)(2).webm" type="video/webm" media="(min-width: 769px)">
         </video>
-        <img src="images/mobilebg.webp" alt="Fallback background image" class="fallback-image">
+        <img 
+        src="images/mobilebg-sm.webp"
+        srcset="
+            images/mobilebg-sm.webp 600w,
+            images/mobilebg.webp 1200w
+        "
+        sizes="(max-width: 600w) 100vw, 1200px"
+        alt="Fallback background image" 
+        class="fallback-image"
+        />
         <nav>
             <h1>
                 <a href="home.html">
