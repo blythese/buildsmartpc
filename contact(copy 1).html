@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="preload" href="/fonts/Orbitron-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
-
 <body>
-
-
     <div class="hero">
         <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
-            <source src="images/AdobeStock%20343739001.mp4" type="video/mp4">
+            <source src="https://pub-b3e737a71fcc465e81d0fd712692ec5c.r2.dev/Adobestock 343739001(3)(2).webm" type="video/webm" media="(min-width: 769px)">
         </video>
+        <img src="https://pub-850c252e94a04c83b584e6f1184387e5.r2.dev/mobilebg.webp" alt="Fallback background image" class="fallback-image">
         <nav>
-            <h1><a href="home.html"><img src="images/logo1.png" alt="logo"></h1></a>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <h1>
+                <a href="home.html">
+                    <img src="https://pub-850c252e94a04c83b584e6f1184387e5.r2.dev/logo2.webp" alt="logo">
+                </a>
+            </h1>
+            <div class="menu-toggle" onclick="toggleMenu()">&#x2630;</div>
             <ul class="nav-links">
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="guides.html">GUIDES</a></li>
