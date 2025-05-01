@@ -1,6 +1,6 @@
 /* Resources Page Specific Styles */
 .resources {
-    font-size: 100px;
+    font-size: clamp(3.5rem, 10vw, 6rem);
     text-align: center;
     color: white;
     margin-top: 50px;
