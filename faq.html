@@ -2,81 +2,250 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Build Smart PC | FAQ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/faq.css">
-    <link rel="preload" href="/fonts/Orbitron-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Build Smart PC | FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="preload" href="/fonts/Orbitron-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="hero">
-        <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
-            <source src="https://pub-b3e737a71fcc465e81d0fd712692ec5c.r2.dev/Adobestock 343739001(3)(2).webm" type="video/webm" media="(min-width: 769px)">
-        </video>
-        <img src="https://pub-850c252e94a04c83b584e6f1184387e5.r2.dev/mobilebg.webp" alt="Fallback background image" class="fallback-image">
-        <nav>
-            <h1>
-                <a href="index.html">
-                    <img src="https://pub-850c252e94a04c83b584e6f1184387e5.r2.dev/logo2.webp" alt="logo">
-                </a>
-            </h1>
-            <div class="menu-toggle" onclick="toggleMenu()">&#x2630;</div>
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="guides.html">GUIDES</a></li>
-                <li><a href="builds.html">BUILDS</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="resources.html">RESOURCES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="faq">
-            FAQ
-        </div>
-        <div class="scroll">
-            <a href="#main"><i class="arrow-down"></i>Scroll</a>
-        </div>
+  <div class="hero">
+    <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
+      <source src="https://pub-b3e737a71fcc465e81d0fd712692ec5c.r2.dev/Adobestock 343739001(3)(2).webm"
+        type="video/webm" loading="lazy">
+    </video>
+    <img src="https://pub-850c252e94a04c83b584e6f1184387e5.r2.dev/mobilebg.webp" alt="Fallback background image"
+      class="fallback-image" loading="lazy">
+    <nav>
+      <h1>
+        <a href="index.html">
+          <img src="https://pub-850c252e94a04c83b584e6f1184387e5.r2.dev/logo2.webp" alt="logo" loading="lazy">
+        </a>
+      </h1>
+      <div class="menu-toggle" onclick="toggleMenu()">&#x2630;</div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="guides.html">GUIDES</a></li>
+        <li><a href="builds.html">BUILDS</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="resources.html">RESOURCES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="faq">FAQ</div>
+    <div class="scroll">
+      <a href="#main"><i class="arrow-down"></i>Scroll</a>
     </div>
+  </div>
 
-<section class="faq-container">
-        <div class="faq-item">
-            <h3>Q: Is building a PC hard?</h3>
-            <p>A: Not really! It’s like putting together adult LEGO. With the right guidance, anyone can do it.</p>
-        </div>
+  <section id="main" class="faq-container">
+    <div class="faq-item">
+      <h3><span class="faq-number">1.</span> What tools do I need to build a PC?</h3>
+      <ul>
+        <li><strong>Screwdrivers:</strong> A magnetic Phillips #2 is essential.</li>
+        <li><strong>Thermal paste:</strong> Either pre-applied on coolers or a small tube if you’re installing your own.</li>
+        <li><strong>Cable ties:</strong> For neat cable management.</li>
+        <li><strong>Anti-static wrist strap (optional):</strong> Helps prevent ESD when handling components.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">2.</span> How do I know my parts are compatible?</h3>
+      <ul>
+        <li><strong>Motherboard &amp; CPU socket:</strong> They must match (e.g., Intel LGA 1700 or AMD AM5).</li>
+        <li><strong>RAM type &amp; speed:</strong> DDR4 boards need DDR4 modules; DDR5 boards need DDR5.</li>
+        <li><strong>PSU wattage &amp; connectors:</strong> Choose a power supply with enough wattage and the right PCIe/SATA/Molex plugs.</li>
+        <li><strong>Case size &amp; form factor:</strong> ATX cases fit ATX/micro-ATX; mini-ITX cases only fit mini-ITX boards.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">3.</span> Where’s the best place to buy parts?</h3>
+      <ul>
+        <li>Online retailers: Newegg, Amazon, B&amp;H</li>
+        <li>Micro Center (in-store pickup)</li>
+        <li>Local PC shops</li>
+        <li>Second-hand markets: eBay, Facebook Marketplace (check seller ratings &amp; condition)</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">4.</span> How long will it take to put together my first build?</h3>
+       <ul>
+        <li>Approximately 1–3 hours including unpacking, assembly, and first power-on test. Experienced builders can finish in under an hour.</li>
+        </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">5.</span> Do I need to update my BIOS/UEFI?</h3>
+      <ul>
+      <li>Usually yes if you’re using a very new CPU on an older motherboard—check the manufacturer’s support site for the latest BIOS version and update instructions.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">6.</span> What if my PC won’t turn on?</h3>
+      <ol>
+        <li>Make sure your power supply switch is turned on.</li>
+        <li>Verify all power cables are fully seated (24-pin ATX, 8-pin CPU, GPU).</li>
+        <li>Ensure your RAM modules are properly seated.</li>
+        <li>Check your GPU is fully inserted and locked into the PCIe slot.</li>
+        <li>Confirm the front-panel power-switch header is correctly plugged in.</li>
+        <li><em>Optional:</em> Breadboard outside the case to isolate shorts.</li>
+      </ol>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">7.</span> How important is cable management?</h3>
+      <ul>
+      <li>Tidy cables improve airflow and cooling, simplify future upgrades, and enhance the overall look of your build.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">8.</span> Can I reuse parts from an old PC?</h3>
+      <ul>
+      <li>Yes, as long as they’re compatible and in good working order (PSU, drives, fans, etc.). Inspect all components for wear before reuse.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">9.</span> What storage options should I consider?</h3>
+      <ul>
+        <li><strong>NVMe SSDs:</strong> Fastest boot and load times; ideal for OS &amp; most-used apps.</li>
+        <li><strong>SATA SSDs:</strong> More affordable SSD option; great for games &amp; general storage.</li>
+        <li><strong>HDDs:</strong> Best cost per TB; ideal for mass media storage &amp; backups.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">10.</span> How do I choose a case?</h3>
+      <ul>
+        <li><strong>Airflow vs. aesthetics:</strong> Mesh fronts for airflow; tempered glass for looks.</li>
+        <li><strong>Size &amp; compatibility:</strong> Check GPU length, CPU cooler height, radiator clearance.</li>
+        <li><strong>Front-panel I/O:</strong> Ensure enough USB (Type-A/Type-C), audio jacks, RGB controls.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">11.</span> What cooling solutions work best?</h3>
+      <ul>
+        <li><strong>Air coolers:</strong> Reliable, quieter under moderate loads, easy to install.</li>
+        <li><strong>AIO liquid coolers:</strong> Better peak cooling for overclocking; needs radiator space.</li>
+        <li><strong>Case fans:</strong> Balance intake/exhaust; aim for slight positive pressure.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">12.</span> How can I troubleshoot random shutdowns or crashes?</h3>
+      <ol>
+        <li>Monitor temperatures (e.g., HWMonitor) to check for overheating.</li>
+        <li>Inspect and update chipset/GPU drivers.</li>
+        <li>Run a memory test with MemTest86 to catch faulty RAM.</li>
+        <li>Check PSU health by swapping in a known-good unit or using a PSU tester.</li>
+      </ol>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">13.</span> Should I overclock my CPU/GPU?</h3>
+      <ul>
+          <li>Only if you have adequate cooling.</li>
+          <li>Always perform stability testing and be aware that overclocking can void warranties and reduce component lifespan.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">14.</span> What do the BIOS POST beep codes mean?</h3>
+      <ui>
+      <li>Refer to your motherboard manual—specific beep sequences correspond to errors like RAM failure, GPU not detected, or CPU issues.</li>
+      </ui>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">15.</span> How do I update my GPU drivers?</h3>
+      <ol>
+        <li>Identify your GPU in Device Manager under “Display Adapters.”</li>
+        <li>Download the latest drivers from NVIDIA GeForce Experience or AMD Radeon Software.</li>
+        <li>For persistent issues, use DDU in Safe Mode for a clean install.</li>
+      </ol>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">16.</span> How often should I clean my PC?</h3>
+      <ul>
+      <li>Every 3–6 months, use compressed air at an angle to clear dust from fans, heatsinks, and filters.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">17.</span> What’s the difference between modular and non-modular PSUs?</h3>
+      <ul>
+        <li><strong>Fully modular:</strong> All cables detach—best for cable management.</li>
+        <li><strong>Semi-modular:</strong> Core cables fixed; extras detachable.</li>
+        <li><strong>Non-modular:</strong> All cables permanently attached—cheaper but less tidy.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">18.</span> How do I enable XMP/DOCP for RAM?</h3>
+      <ol>
+        <li>Enter BIOS/UEFI (usually Del or F2 at boot).</li>
+        <li>Find memory settings under “OC,” “Ai Tweaker,” or similar menu.</li>
+        <li>Enable XMP (Intel) or DOCP (AMD) profile matching your RAM’s rated speed.</li>
+        <li>Save and reboot.</li>
+      </ol>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">19.</span> How do I set up custom fan curves?</h3>
+      <ul>
+        <li>In BIOS: Use Q-Fan or Fan Control to map speed vs. temperature.</li>
+        <li>Motherboard utilities: ASUS Fan Xpert, MSI Dragon Center, etc.</li>
+        <li>Third-party apps: Fan Control (open-source) across many platforms.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">20.</span> How do I pick the right monitor for my build?</h3>
+      <ul>
+        <li><strong>Resolution & size:</strong> 1080p for 24″; 1440p for 27″; 4K for 32″+.</li>
+        <li><strong>Refresh rate:</strong> 60 Hz for general use; 144 Hz+ for gaming.</li>
+        <li><strong>Panel type:</strong> IPS for color accuracy; VA for contrast; TN for fastest response.</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">21.</span> What should I know about RGB lighting?</h3>
+      <ul>
+        <li>Control via motherboard ARGB headers or external controllers.</li>
+        <li>Software: Aura Sync (ASUS), Mystic Light (Gigabyte), RGB Fusion (MSI), Polychrome (ASRock).</li>
+        <li>Check header power limits (5 V, ≤ 3 A).</li>
+      </ul>
+    </div>
+    
+    <div class="faq-item">
+      <h3><span class="faq-number">22.</span> How can I benchmark my new PC?</h3>
+      <ul>
+        <li><strong>CPU:</strong> Cinebench R23 or Geekbench.</li>
+        <li><strong>GPU:</strong> 3DMark Time Spy or Unigine Heaven/Valley.</li>
+        <li><strong>Storage:</strong> CrystalDiskMark for sequential & random read/write speeds.</li>
+        <li><strong>Overall:</strong> PCMark 10 for real-world productivity/workflow testing.</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="faq-item">
-            <h3>Q: Do I need special tools?</h3>
-            <p>A: A Phillips head screwdriver is all you need for most builds.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>Q: How do I know parts are compatible?</h3>
-            <p>A: Use tools like PCPartPicker to check compatibility before buying.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>Q: What if my PC doesn’t turn on?</h3>
-            <p>A: Don’t panic! Recheck all your connections.</p>
-        </div>
-    </section>
-
-
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let video = document.getElementById("bgVideo");
-            video.playbackRate = 0.6; // Set video to half speed
-        });
-
-
-        function toggleMenu() {
-            let menu = document.querySelector(".nav-links");
-            menu.classList.toggle("active");
-        }
-
-    </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("bgVideo").playbackRate = 0.6;
+    });
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+  </script>
 </body>
-
+<footer>
+  <p>&copy; 2025 Sean Blythe. <a href="https://buildsmartpc.icu/">buildsmartpc.icu</a>. All rights reserved.</p>
+</footer>
 </html>
