@@ -6,3 +6,79 @@
     margin-top: 50px;
     font-weight: bold;
 }
+
+/* faq.css */
+
+/* Container */
+.faq-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0;
+  /* no background on the section itself—each item has its own card */
+}
+
+/* Individual FAQ cards */
+.faq-item {
+  background: #000B2A;           /* same dark background as intro sections */
+  border-radius: 10px;           /* match rounded corners */
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5); /* matching neon glow */
+  margin-bottom: 30px;
+  padding: 20px;
+  color: white;
+}
+
+/* Question headings */
+.faq-item h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-shadow:
+    0 0 2.5px #0286BD,
+    0 0 5px   #0286BD,
+    0 0 10px  #00aaff,
+    0 0 20px  #00aaff,
+    0 0 40px  #00e6ff;
+}
+
+/* Numbering badge */
+.faq-number {
+  display: inline-block;
+  margin-right: 8px;
+  color: #00e6ff;
+  font-weight: bold;
+}
+
+/* Answer text */
+.faq-item p,
+.faq-item ul,
+.faq-item ol {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 20px; /* indent lists */
+}
+
+/* Nested lists styling */
+.faq-item ul {
+  list-style-type: disc;
+}
+
+.faq-item ol {
+  list-style-type: decimal;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .faq-item {
+    padding: 15px;
+  }
+  .faq-item h3 {
+    font-size: 20px;
+  }
+  .faq-item p,
+  .faq-item ul,
+  .faq-item ol {
+    font-size: 16px;
+    padding-left: 16px;
+  }
+}
